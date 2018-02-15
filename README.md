@@ -10,7 +10,7 @@ WordPress Core and WordPress Coding Standards teams.
 The "RFC" (request for comments) process is intended to provide a
 consistent and controlled path for new coding standards to enter the project.
 
-[Active RFC List](https://github.com/wpcs/rfcs/pulls)
+[Active RFC List](https://github.com/WordPress-Coding-Standards/rfcs/pulls)
 
 WordPress Coding Standards is still **actively developing** this process, and 
 it will still change as more features are implemented and the community settles 
