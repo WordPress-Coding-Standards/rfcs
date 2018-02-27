@@ -33,8 +33,6 @@ So Type Declarations are advantageous, because ultimately, they produce improved
 - `self`, which references own class or interface name
 - `array`, to require an array
 
-**Formatting:** There should be one space before and after a Type Declaration.
-
 ```php
 protected function foo( Bar $bar, array $items ) {
   // $bar   must be an instance of the Bar class.
@@ -49,18 +47,53 @@ protected function foo( Bar $bar, array $items ) {
 - The [`iterable` Type Declaration](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.iterable-pseudo-type), [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types), and [Void Functions](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.void-functions) became available in PHP 7.1.
 - The [`object` Type Declaration](http://php.net/manual/en/migration72.new-features.php#migration72.new-features.object-type) became available in PHP 7.2.
 
-**Formatting:** A Return Type Declaration should immediately follow a function's round closing bracket `)`, with no space before `:`, and with one space before and after the data type.
+## Formatting
+
+### Whitespace
+
+There should be one space before and after a Type Declaration.
 
 ```php
-protected function foo( string $str, int $num, bool $flag, callable $callback ): bool {
-  // $str      must be passed as a string.
-  // $num      must be passed as an integer.
-  // $flag     must be passed as true or false.
-  // $callback must be a callable function, method, closure.
-
-  return true; // must return true or false.
+protected function foo( Bar $bar, array $items ) {
+  // ...
 }
 ```
+
+#### Return Type Declarations
+
+A Return Type Declaration should immediately follow a function's round closing bracket `)`, with no space before `:`, and with one space before and after the data type.
+
+```php
+protected function foo(): array {
+  // ...
+}
+```
+
+### Expected CaSe
+
+The expected caSe of Type Declarations is lowercase (e.g., `array`), except for class and interface names, which should always follow the name as declared by the class or interface; e.g., `WP_REST_Request`
+
+```php
+protected function foo( array $data, WP_REST_Request $request ) {
+  // ...
+}
+```
+
+### Expected Names
+
+The following are valid Type Declarations:
+_**Note:** Use `int`, not `integer`. Use `bool`, not `boolean`._
+
+- Class or interface name; e.g., `WP_REST_Request`
+- `self`, which references own class or interface name
+- `array`
+- `callable`
+- `string`
+- `int`
+- `float`
+- `bool`
+- `iterable`
+- `object`
 
 ## WordPress Core Compatibility
 
