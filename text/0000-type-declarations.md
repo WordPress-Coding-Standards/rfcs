@@ -199,7 +199,7 @@ Strict Mode can be enabled on a per-file basis using the `declare` directive:
 declare( strict_types=1 );
 ```
 
-In Strict Mode, when both the function call and the function declaration are both in a strict-typed file, only a variable of the exact type of the Scalar Type Declaration will be accepted. Otherwise, a [TypeError](http://php.net/manual/en/class.typeerror.php) will be thrown. The only exception to this rule is that an `int` may be given to a function expecting a `float`.
+In Strict Mode, when both the function call and the function declaration are in a strict-typed file, only a variable of the exact type of the Scalar Type Declaration will be accepted. Otherwise, a [TypeError](http://php.net/manual/en/class.typeerror.php) will be thrown. The only exception to this rule is that an `int` may be given to a function expecting a `float`.
 
 This is also true for Return Type Declarations. Whenever a function is defined in a strict-typed file, a scalar return value must be of the correct type, otherwise a [TypeError](http://php.net/manual/en/class.typeerror.php) will be thrown.
 
