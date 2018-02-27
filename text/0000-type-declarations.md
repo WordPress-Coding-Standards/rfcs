@@ -19,7 +19,7 @@ protected function foo( Bar $bar, array $items ) {
 
 # Motivation
 
-PHP is a [weakly typed language](https://en.wikipedia.org/wiki/Strong_and_weak_typing). It doesn't require you to declare data types. However, variables still have data types associated with them (e.g., `string`, `integer`). In a weakly typed language you can do radical things like adding a `string` to an `integer` with no error. While this can be wonderful in some cases, it can also lead to unanticipated behavior and bugs.
+PHP is a [weakly typed language](https://en.wikipedia.org/wiki/Strong_and_weak_typing). It doesn't require you to declare data types. However, variables still have data types associated with them (e.g., `string`, `integer`). In a weakly typed language you can do things like adding a `string` to an `integer` with no error. While this can be wonderful in some cases, it can also lead to unanticipated behavior and bugs.
 
 For example, PHP functions and class methods accept parameters, such as `function foo( $bar, $items )`. If Type Declarations aren't being used, the only way a function knows what it's being passed is to run `is_*()` checks, `instanceof`, or use type casting. Otherwise, `$bar` could be anything, and there's a chance that invalid data types would go unnoticed (no error) and produce an unexpected or incorrect return value. Imagine type casting an array to an integer. That's forcing a wrong into a right, instead of correcting the underlying issue. A caller should pass the right data type to begin with.
 
