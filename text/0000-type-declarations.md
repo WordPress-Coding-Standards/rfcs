@@ -167,7 +167,7 @@ However, unlike [`_doing_it_wrong()`](https://developer.wordpress.org/reference/
 
 # Adoption Strategy
 
-Retrofitting existing functions with Type Declarations is generally discouraged. Doing so would suddenly enforce a rule that did not exist prior, causing runtime errors. For example, imagine themes and plugins calling core functions that previously accepted multiple data types, but now require a specific type. Not good! This scenario should be avoided.
+Retrofitting existing functions with Type Declarations should be avoided 💯. Doing so would suddenly enforce a rule that did not exist prior, causing runtime errors. For example, imagine themes and plugins calling core functions that previously accepted multiple data types, but now require a specific type. Not good! This scenario must be avoided.
 
 However, new functions (particularly protected and private methods of a class) are encouraged to use Type Declarations supported by the minimum version of PHP they are targeting. If targeting a modern version of PHP (7.0+), the use of [Return Type Declarations](http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration) is encouraged also.
 
