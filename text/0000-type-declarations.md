@@ -12,8 +12,8 @@ You can force callers to pass an `array`, or a specific type of object, such as 
 
 ```php
 protected function foo( Bar $bar, array $items ) {
-  // $bar   must be an instance of the Bar class.
-  // $items must be passed as an array.
+	// $bar   must be an instance of the Bar class.
+	// $items must be passed as an array.
 }
 ```
 
@@ -35,8 +35,8 @@ So Type Declarations are advantageous, because ultimately, they produce improved
 
 ```php
 protected function foo( Bar $bar, array $items ) {
-  // $bar   must be an instance of the Bar class.
-  // $items must be passed as an array.
+	// $bar   must be an instance of the Bar class.
+	// $items must be passed as an array.
 }
 ```
 
@@ -58,7 +58,7 @@ There MUST be one space before and after a Type Declaration.
 
 ```php
 protected function foo( Bar $bar, array $items ) {
-  // ...
+	// ...
 }
 ```
 
@@ -67,7 +67,7 @@ There MUST NOT be a space between the question mark and the Type Declaration.
 
 ```php
 protected function foo( ?Bar $bar, ?array $items ) {
-  // ...
+	// ...
 }
 ```
 
@@ -77,7 +77,7 @@ The colon and Type Declaration MUST be on the same line as a function's closing 
 
 ```php
 protected function foo(): array {
-  // ...
+	// ...
 }
 ```
 
@@ -86,7 +86,7 @@ There MUST NOT be a space between the question mark and the Type Declaration.
 
 ```php
 protected function foo(): ?array {
-  // ...
+	// ...
 }
 ```
 
@@ -96,7 +96,7 @@ The caSe of Type Declarations MUST be lowercase (e.g., `array`), except for clas
 
 ```php
 protected function foo( array $data, WP_REST_Request $request ) {
-  // ...
+	// ...
 }
 ```
 
@@ -135,8 +135,8 @@ When you're writing a function or a class method that expects to receive an arra
 
 ```php
 protected function foo( Bar $bar, array $items ) {
-  // $bar   must be an instance of the Bar class.
-  // $items must be passed as an array.
+	// $bar   must be an instance of the Bar class.
+	// $items must be passed as an array.
 }
 ```
 
@@ -148,8 +148,8 @@ Likewise, if you're writing a public function for an API and it needs a `WP_Post
 
 ```php
 function foo( $post ) {
-  $post = get_post( $post );
-  ...
+	$post = get_post( $post );
+	...
 }
 ```
 
