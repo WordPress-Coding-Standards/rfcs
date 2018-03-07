@@ -31,6 +31,7 @@ So Type Declarations are advantageous, because ultimately, they produce improved
 
 - Class or interface name; e.g., `WP_REST_Request`
 - `self`, which references own class or interface name
+- `parent`, which references parent class or interface name
 - `array`, to require an array
 
 ```php
@@ -53,7 +54,7 @@ _**Note:** All of these formatting rules follow [PSR-12](https://github.com/php-
 
 ### Whitespace
 
-**The additional PSR-12 clarification:**
+**The additional PSR-12 clarification:**  
 There MUST be one space before and after a Type Declaration.
 
 ```php
@@ -62,7 +63,7 @@ protected function foo( Bar $bar, array $items ) {
 }
 ```
 
-**Nullable Types:**
+**Nullable Types:**  
 There MUST NOT be a space between the question mark and the Type Declaration.
 
 ```php
@@ -81,7 +82,7 @@ protected function foo(): array {
 }
 ```
 
-**Nullable Types:**
+**Nullable Types:**  
 There MUST NOT be a space between the question mark and the Type Declaration.
 
 ```php
@@ -108,6 +109,7 @@ The following are valid Type Declarations:
 
 - Class or interface name; e.g., `WP_REST_Request`
 - `self`, which references own class or interface name
+- `parent`, which references parent class or interface name
 - `array`
 - `callable`
 - `string`
@@ -116,6 +118,7 @@ The following are valid Type Declarations:
 - `bool`
 - `iterable`
 - `object`
+- `void`, as a Return Type Declaration
 
 ## WordPress Core Compatibility
 
@@ -125,6 +128,7 @@ The only Type Declarations supported in WordPress Core at this time, are:
 
 - Class or interface name; e.g., `WP_REST_Request`
 - `self`, which references own class or interface name
+- `parent`, which references parent class or interface name
 - `array`, to require an array
 
 _These can only be used in function parameters, not as Return Type Declarations._
