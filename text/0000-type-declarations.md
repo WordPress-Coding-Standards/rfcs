@@ -44,7 +44,7 @@ protected function foo( Bar $bar, array $items ) {
 
 - The [`callable` Type Declaration](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration) became available in PHP 5.4.
 - [Scalar Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.scalar-type-declarations): `string`, `int`, `float`, and `bool` became available in PHP 7.0, along with support for [Return Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.return-type-declarations) and [Strict Typing](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict).
-- The [`iterable` Type Declaration](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.iterable-pseudo-type), [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types), and [Void Functions](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.void-functions) became available in PHP 7.1.
+- The [`iterable` Type Declaration](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.iterable-pseudo-type), [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types), and [`void` Return Type Declaration](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.void-functions) became available in PHP 7.1.
 - The [`object` Type Declaration](http://php.net/manual/en/migration72.new-features.php#migration72.new-features.object-type) became available in PHP 7.2.
 
 ## Formatting
@@ -119,7 +119,7 @@ The following are valid Type Declarations:
 
 ## WordPress Core Compatibility
 
-At this time, the additional Type Declarations: `callable`, `string`, `int`, `float`, `bool`, `iterable`, and `object` must be avoided in WordPress Core. The same is true for [Return Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.return-type-declarations), [Strict Typing](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict), [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types), and [Void Functions](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.void-functions). Please see [WordPress requirements](https://wordpress.org/about/requirements/) (PHP 5.2.4+) and [this table](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration) for further details.
+At this time, the additional Type Declarations: `callable`, `string`, `int`, `float`, `bool`, `iterable`, and `object` must be avoided in WordPress Core. The same is true for [Return Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.return-type-declarations), [Strict Typing](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict), and [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types). Please see [WordPress requirements](https://wordpress.org/about/requirements/) (PHP 5.2.4+) and [this table](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration) for further details.
 
 The only Type Declarations supported in WordPress Core at this time, are:
 
@@ -169,14 +169,13 @@ However, new functions (particularly protected and private methods of a class) a
 
 # Teaching Strategy
 
-Type Declarations were once known as Type Hints in PHP 5. That name is no longer appropriate, because later versions of PHP added support for [Return Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.return-type-declarations), [Strict Typing](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict), [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types), and [Void Functions](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.void-functions). For this reason, please use the up-to-date and official terminology:
+Type Declarations were once known as Type Hints in PHP 5. That name is no longer appropriate, because later versions of PHP added support for [Return Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.return-type-declarations), [Strict Typing](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict), and [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types). For this reason, please use the up-to-date and official terminology:
 
 - [Type Declarations](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration)
 - [Scalar Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.scalar-type-declarations)
 - [Return Type Declarations](http://php.net/manual/en/migration70.new-features.php#migration70.new-features.return-type-declarations)
 - [Strict Typing](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration.strict) (aka: Strict Mode)
 - [Nullable Types](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.nullable-types)
-- [Void Functions](http://php.net/manual/en/migration71.new-features.php#migration71.new-features.void-functions)
 
 ## Default Behavior & Strict Mode
 
