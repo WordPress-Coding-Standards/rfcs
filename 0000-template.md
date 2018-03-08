@@ -60,7 +60,7 @@ documentation must be re-organized or altered?
 
 # Handbook Content
 
-Everything in this section should be _word-for-word_ what is proposed to go into the handbook - code examples, explanation of how WordPress Core may differ from usage of the feature etc. Keep it concise and readable.
+Everything in this section should be _word-for-word_ what is proposed to go into the handbook - code examples, explanation of how WordPress Core may differ from usage of the feature etc. Include a section title or what section of the handbook this should go into if it should be added to an existing section. Keep it concise and readable.
 
 # Unresolved questions
 
