@@ -58,6 +58,10 @@ idea best presented?
 Would the acceptance of this proposal mean the WordPress Coding Standards 
 documentation must be re-organized or altered? 
 
+# Handbook Content
+
+Everything in this section should be _word-for-word_ what is proposed to go into the handbook - code examples, explanation of how WordPress Core may differ from usage of the feature etc. Keep it concise and readable.
+
 # Unresolved questions
 
 Optional, but suggested for first drafts. What parts of the design are still
