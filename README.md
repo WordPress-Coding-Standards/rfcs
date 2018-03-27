@@ -31,7 +31,7 @@ first gets the RFC merged into the RFC repo as a markdown file. At that point
 the RFC is 'active' and may be implemented with the goal of eventual inclusion
 into the WordPress Coding Standards.
 
-* Fork the RFC repo http://github.com/wpcs/rfcs
+* Fork the RFCs repo http://github.com/WordPress-Coding-Standards/rfcs
 * Copy `0000-template.md` to `text/0000-my-feature.md` (where
 'my-feature' is descriptive. Don't assign an RFC number yet).
 * Fill in the RFC. Put care into the details: **RFCs that do not
