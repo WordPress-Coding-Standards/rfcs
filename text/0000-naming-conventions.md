@@ -65,11 +65,13 @@ PHP [keywords](http://php.net/manual/en/reserved.keywords.php) have special mean
 
 Some examples are
 
-```php
-| die() | echo   | const | do  | continue |
+
+|  |    |  |  | |
 |-------|--------|-------|-----|----------|
+| die() | echo   | const | do  | continue |
 | for   | exit() | else  | new | return   |
-```
+
+
 
 #### Constants
 
